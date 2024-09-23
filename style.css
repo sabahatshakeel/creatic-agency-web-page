@@ -1,0 +1,836 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  color: white;
+}
+
+/* ----------------------------NAVBAR----------------------- */
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 110px;
+
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 65%,
+    rgba(40, 4, 106, 1) 100%
+  );
+  top: 0;
+  position: sticky;
+  z-index: 10;
+}
+.logo {
+  width: 35%;
+  margin-left: 100px;
+}
+nav {
+  width: 45%;
+}
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+ul li {
+  list-style: none;
+}
+ul li a {
+  text-decoration: none;
+  padding: 8px 5px;
+  font-size: 1.3rem;
+  color: white;
+  position: relative;
+}
+ul li a::after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 4px;
+  top: 100%;
+  left: 25%;
+  background-color: white;
+  transition: all 0.5s ease;
+  transform: scale(0, 1);
+}
+ul li a:hover::after {
+  transform: scale(1, 1);
+  background-color: white;
+  width: 50%;
+}
+.search {
+  width: 15%;
+  margin-right: 110px;
+  height: 40px;
+  width: 70px;
+  /* background: rgb(40,4,106);
+    background: linear-gradient(90deg, rgba(40,4,106,1) 0%, rgba(0,0,0,1) 31%); */
+  background: rgb(40, 4, 106);
+  background: linear-gradient(
+    90deg,
+    rgba(40, 4, 106, 1) 0%,
+    rgba(0, 0, 0, 1) 52%
+  );
+  border-radius: 30px;
+  position: relative;
+}
+.search i {
+  color: #6d95fc;
+  font-size: 1.2rem;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+}
+
+/* ===--------------------------Main----------------------====*/
+.main {
+  min-height: 100%;
+}
+
+/*---------------------------- HOME------------------------- */
+
+#home {
+  padding: 50px 0 50px 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  min-height: 50vh;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 79%,
+    rgba(40, 4, 106, 1) 100%
+  );
+  color: white;
+}
+
+/* ----------------------------First Home ----------------------- */
+
+#home .first_home {
+  width: 45%;
+  padding-left: 90px;
+  /* background-color: bisque; */
+}
+.first_home .text {
+  color: #6d95fc;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+}
+.first_home h1 {
+  font-size: 3.5rem;
+  font-weight: normal;
+  margin: 12px 0 40px 0;
+  position: relative;
+}
+
+.first_home h1::after {
+  content: "";
+  height: 4px;
+  width: 115px;
+  background-color: #6d95fc;
+  position: absolute;
+  top: 215px;
+  left: 2px;
+}
+
+.first_home h1 span {
+  color: #6d95fc;
+}
+.first_home .content {
+  font-size: 1rem;
+  letter-spacing: 1px;
+  line-height: 25px;
+}
+.first_home button {
+  font-size: 1rem;
+  padding: 10px 8px;
+  border: 4px solid #88a3e7;
+  background-color: black;
+  color: white;
+  margin: 20px 0;
+  box-shadow: 2px 2px 11px #6d95fc, -2px -2px 11px #6d95fc;
+}
+.first_home button:hover {
+  border: 4px solid #fff;
+}
+
+/* ----------------------------Second Home ----------------------- */
+
+#home .sec_home {
+  width: 50%;
+}
+#home .sec_home img {
+  height: 550px;
+}
+
+/* ----------------------------ABOUT US----------------------- */
+
+#about_us {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(40, 4, 106);
+  background: linear-gradient(
+    90deg,
+    rgba(40, 4, 106, 1) 0%,
+    rgba(0, 0, 0, 1) 28%
+  );
+}
+
+/* ----------------------------First About----------------------- */
+
+#about_us .first_about {
+  width: 50%;
+  /* background-color: bisqsue; */
+}
+#about_us .first_about img {
+  /* width: 600px; */
+  height: 400px;
+  margin-top: 40px;
+  padding-left: 150px;
+  /* background-color: antiquewhite; */
+}
+
+/* ----------------------------Second About----------------------- */
+
+#about_us .sec_about {
+  width: 50%;
+  /* padding: 0 60px; */
+  margin: 60px 130px 0 200px;
+  /* background-color: aqua; */
+}
+.sec_about h1 {
+  font-size: 2.8rem;
+  font-weight: normal;
+  margin: 12px 0 40px 0;
+  position: relative;
+}
+.sec_about h1::after {
+  content: "";
+  height: 4px;
+  width: 100px;
+  background-color: #6d95fc;
+  position: absolute;
+  top: 120px;
+  left: 2px;
+}
+
+.sec_about h1 span {
+  color: #6d95fc;
+}
+.sec_about .content {
+  font-size: 1rem;
+  letter-spacing: 1px;
+  line-height: 25px;
+  margin: 15px 0 25px 0;
+}
+.sec_about .content_1 {
+  font-size: 1rem;
+  letter-spacing: 1px;
+  line-height: 25px;
+}
+
+.sec_about .text {
+  color: #6d95fc;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+.sec_about .text_1 {
+  color: #6d95fc;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+
+.sec_about button {
+  font-size: 1rem;
+  padding: 12px 8px;
+  border: 4px solid #88a3e7;
+  background-color: black;
+  color: white;
+  margin: 20px 0;
+  box-shadow: 1px 1px 9px #6d95fc, -1px -1px 9px #6d95fc;
+}
+.sec_about button:hover {
+  border: 4px solid #fff;
+}
+
+/* ----------------------------SERVICES----------------------- */
+
+#services {
+  min-height: 110vh;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 79%,
+    rgba(40, 4, 106, 1) 100%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 60px;
+}
+
+/* ----------------------------First Service----------------------- */
+
+#services .first_service {
+  width: 40%;
+  padding-left: 50px;
+}
+
+.first_service .text {
+  color: #6d95fc;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+}
+.first_service h1 {
+  font-size: 3rem;
+  font-weight: normal;
+  margin: 12px 0 40px 0;
+  position: relative;
+}
+
+.first_service h1::after {
+  content: "";
+  height: 4px;
+  width: 80px;
+  background-color: #6d95fc;
+  position: absolute;
+  top: 125px;
+  left: 2px;
+}
+
+.first_service h1 span {
+  color: #6d95fc;
+}
+.first_service .content {
+  font-size: 1rem;
+  letter-spacing: 1px;
+  line-height: 25px;
+}
+.first_service button {
+  font-size: 1rem;
+  padding: 10px 8px;
+  border: 4px solid #88a3e7;
+  background-color: black;
+  color: white;
+  margin: 20px 0;
+  box-shadow: 2px 2px 11px #6d95fc, -2px -2px 11px #6d95fc;
+}
+.first_service button:hover {
+  border: 4px solid #fff;
+}
+
+/* ----------------------------Sec Service----------------------- */
+
+#services .sec_service {
+  width: 40%;
+}
+.sec_service .cards {
+  display: flex;
+  justify-content: space-evenly;
+}
+.sec_service .cards .card {
+  height: 260px;
+  width: 220px;
+  border: transparent;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 10px 15px 30px;
+  /* background: rgb(0,0,0);
+  background: linear-gradient(30deg, rgba(0,0,0,1) 46%, rgba(40,4,106,1) 100%); */
+ 
+
+  transition: all 0.9s ease;
+}
+.sec_service .cards .card_1, .card_3{
+  background: linear-gradient(300deg, rgba(0,0,0,1) 46%, rgba(25,2,65,1) 100%);
+}
+.sec_service .cards .card_2, .card_4{
+  background: linear-gradient(80deg, rgba(0,0,0,1) 46%, rgba(25,2,65,1) 100%);
+}
+
+.sec_service .cards .card:hover {
+  border: 2px solid #445174;
+  border-radius: 10px;
+  transform: scale(1.1);
+}
+.sec_service .cards .card h3 {
+  color: #6d95fc;
+  font-weight: 400;
+}
+.sec_service .cards .card p {
+  text-align: center;
+}
+
+/* -----------------------portfolio------------------------- */
+
+#portfolio {
+  min-height: 50vh;
+  background: rgb(40, 4, 106);
+  background: linear-gradient(
+    90deg,
+    rgba(40, 4, 106, 1) 0%,
+    rgba(0, 0, 0, 1) 28%
+  );
+}
+
+#portfolio {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: aquamarine;
+}
+#portfolio h1 {
+  font-size: 4rem;
+  font-weight: 500;
+}
+#portfolio p {
+  font-size: 1.2rem;
+  color: #6d95fc;
+}
+
+/* -----------------------PROJECTS------------------------- */
+
+#projects {
+  background-color: black;
+  min-height: 110vh;
+  font-size: 2rem;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 30px 0;
+}
+
+#projects h1 {
+  font-size: 3rem;
+  font-weight: 500;
+}
+#projects .text {
+  margin: 20px 0 70px 0;
+  font-size: 1.2rem;
+  position: relative;
+}
+#projects .text::before {
+  content: "";
+  width: 50px;
+  height: 3px;
+  background-color: #6d95fc;
+  position: absolute;
+  top: 8px;
+  left: 120px;
+}
+#projects .text::after {
+  content: "";
+  width: 50px;
+  height: 3px;
+  background-color: #6d95fc;
+  position: absolute;
+  top: 8px;
+  left: -65px;
+}
+/* -----------------------Sample Projects------------------------- */
+
+.sample_proj {
+  display: flex;
+  justify-content: space-evenly;
+}
+.sample_proj img {
+  width: 30%;
+  z-index: 1;
+  transition: all 0.4s ease;
+}
+.sample_proj img:hover {
+  width: 32%;
+  transform: scale(1.1);
+}
+/* -----------------------Boxs------------------------- */
+.boxs {
+  display: flex;
+}
+.box {
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  margin: 10px;
+}
+.box_3 {
+  position: relative;
+}
+.box_3::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  background-color: transparent;
+  border: 2px solid #6d95fc;
+  position: absolute;
+  top: -5px;
+  left: -5px;
+}
+
+/* -----------------------EXPERIENCE------------------------- */
+#experience {
+  min-height: 75vh;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 79%,
+    rgba(40, 4, 106, 1) 100%
+  );
+  display: flex;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* -----------------------First Experience------------------------- */
+.first_exp {
+  width: 35%;
+}
+.first_exp .text {
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  position: relative;
+}
+.first_exp .text::after {
+  content: "";
+  height: 4px;
+  width: 90px;
+  background-color: #6d95fc;
+  position: absolute;
+  top: 30px;
+  left: 2px;
+}
+.first_exp h1 {
+  font-size: 2.5rem;
+  font-weight: normal;
+  margin: 30px 0;
+}
+.first_exp h1 span {
+  color: #6d95fc;
+}
+.first_exp button {
+  font-size: 1rem;
+  padding: 10px 8px;
+  border: 4px solid #88a3e7;
+  background-color: black;
+  color: white;
+  margin: 20px 0;
+  box-shadow: 2px 2px 11px #6d95fc, -2px -2px 11px #6d95fc;
+}
+.first_exp button:hover {
+  border: 4px solid #fff;
+}
+
+/* -----------------------Second Experience------------------------- */
+.sec_exp {
+  width: 30%;
+}
+.sec_exp .text {
+  margin-bottom: 50px;
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 1.6rem;
+  padding-left: 60px;
+}
+
+.sec_exp .list {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  padding-left: 60px;
+}
+.sec_exp .list p {
+  margin-left: 5px;
+}
+
+/* -----------------------TESTIMONIALS------------------------- */
+
+#testimonial {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+#testimonial .card {
+  width: 440px;
+  height: 700px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* -----------------------Card_1------------------------- */
+#testimonial .card_1 {
+  background-image: url("images/face.png");
+}
+
+/* -----------------------Card_2------------------------- */
+#testimonial .card_2 {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#testimonial .card_2 h1 {
+  font-size: 3rem;
+  font-weight: normal;
+  margin: 10px 0 35px 0;
+  text-align: center;
+  position: relative;
+}
+#testimonial .card_2 h1::after {
+  content: "";
+  height: 4px;
+  width: 140px;
+  background-color: #6d95fc;
+  position: absolute;
+  top: 130px;
+  left: 95px;
+}
+#testimonial .card_2 h1 span {
+  color: #6d95fc;
+}
+
+/* -----------------------Card_2 (box)------------------------- */
+
+#testimonial .card_2 .box {
+  width: 280px;
+  height: 300px;
+  background: rgb(0,0,0);
+  background: linear-gradient(0deg, rgba(0,0,0,1) 27%, rgba(40,4,106,1) 100%);
+  border-bottom: 0.5px solid #05194d;
+  margin: 90px 0 50px 0;
+  padding: 40px 35px;
+  border-radius: 10px;
+}
+#testimonial .card_2 .box .reviews {
+  text-align: center;
+  margin-bottom: 30px;
+  line-height: 1.5rem;
+  font-size: 1.1rem;
+}
+.review img {
+  width: 80px;
+  height: 80px;
+}
+
+.review {
+  display: flex;
+  align-items: center;
+}
+.review .review_text h3 {
+  font-size: 1.4rem;
+  font-weight: normal;
+}
+.review .review_text p {
+  padding-top: 25px;
+  color: #6d95fc;
+}
+
+/* -----------------------Card_2 ( button )------------------------- */
+
+.card_2 button {
+  font-size: 1rem;
+  padding: 10px 8px;
+  border: 4px solid #88a3e7;
+  background-color: black;
+  color: white;
+  margin: 20px 0;
+  box-shadow: 2px 2px 11px #6d95fc, -2px -2px 11px #6d95fc;
+}
+.card_2 button:hover {
+  border: 4px solid #fff;
+}
+
+
+/* -----------------------Card_3------------------------- */
+#testimonial .card_3 {
+  background-image: url("images/face\ 1.png");
+}
+
+
+
+/* -----------------------CONTACT US------------------------- */
+
+#contact_us{
+  min-height: 100vh;
+  background: rgb(40, 4, 106);
+  background: linear-gradient(
+    90deg,
+    rgba(40, 4, 106, 1) 0%,
+    rgba(0, 0, 0, 1) 28%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* -----------------------First Contact------------------------- */
+ .first_contact{
+  width: 35%;
+}
+
+.first_contact h1 {
+  font-size: 3.5rem;
+  font-weight: normal;
+  margin: 12px 0 40px 0;
+  position: relative;
+}
+.first_contact h1::after {
+  content: "";
+  height: 4px;
+  width: 100px;
+  background-color: #6d95fc;
+  position: absolute;
+  top: 80px;
+  left: 5px;
+}
+.first_contact h1 span {
+  color: #6d95fc;
+}
+.first_contact .contact_text {
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  line-height: 25px;
+  margin: 15px 0 25px 0;
+}
+.address{
+  display: flex;
+ margin: 20px 0;
+}
+.address .text{
+ margin-left: 30px;
+}
+.address .loca_text{
+  margin-left: 40px;
+ }
+ .address .text p{
+color: #6d95fc;
+padding-top: 5px;
+ }
+.address i{
+color: #6d95fc;
+font-size: 2.5rem;
+ }
+
+
+
+
+/* -----------------------Sec Contact------------------------- */
+.sec_contact{
+  width: 35%;
+}
+
+
+#contact_us .sec_contact form{
+ width: 380px;
+ padding: 60px 60px 20px 60px ;
+  display: flex;
+  flex-direction: column;
+border-bottom: 1px solid #161a24;
+  background: linear-gradient(0deg, rgba(0,0,0,1) 12%, rgba(25,2,65,1) 100%);
+}
+#contact_us .sec_contact form input{
+  width: 250px;
+padding: 10px;
+background: transparent;
+outline: none;
+border: 1px solid white;
+}
+#contact_us .sec_contact form label{
+  width: 250px;
+padding: 20px 0 10px 0;
+}
+#contact_us .sec_contact form textarea{
+  width: 250px;
+  height: 80px;
+  background: transparent;
+  border: 1px solid white;
+}
+#contact_us .sec_contact form button{
+  width: 100px;
+  height: 50px;
+  background-color: #6d95fc;
+  border: none;
+  outline: none;
+  margin: 25px 75px;
+  box-shadow: 2px 2px 11px #6d95fc, -2px -2px 11px #6d95fc;
+font-size: 1.3rem;
+}
+
+
+/* -----------------------FOOTER------------------------- */
+
+#footer{
+  padding: 50px 0;
+  min-height: 70vh;
+  background-color: black;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-around;
+
+}
+#footer h1{
+font-size: 2.6rem;
+font-weight: normal;
+color: #6d95fc;
+   }
+   #footer .text::after {
+    content: "";
+    height: 4px;
+    width: 100px;
+    background-color: #6d95fc;
+    position: absolute;
+    top: 45px;
+    left: 260px;
+  }
+#footer ul{
+ width: 40%;
+ margin: 20px 0;
+  }
+  #footer .text{
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    width: 45%;
+    text-align: center;
+    position: relative;
+     }
+     #footer p{
+      font-size: 1.1rem;
+      margin-bottom: 20px;
+      width: 40%;
+      text-align: center;
+     
+       }
+  #footer li{
+    color: #6d95fc;
+    font-size: 1.1rem;
+    }
+#footer i{
+color: #6d95fc;
+font-size: 1.5rem;
+padding: 5px 0 70px 0;
+margin: 0 5px;
+}
+#footer .copy_right{
+  display: inline-block;
+  width: 450px;
+  margin-bottom: 0;
+  background-color: rgb(54, 4, 146, 0.4);
+  border-radius: 50%;
+  box-shadow: 0px 1px 10px 10px rgba(54, 4, 146, .2),
+  0 -3px 15px 10px rgba(54, 4, 146, .2);
+}
+
